@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CurrencyConversion-Common/CurrencyConversion-Common.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CurrencyConversion-MVC/CurrencyConversion-MVC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CurrencyConversion-MVP/CurrencyConversion-MVP.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CurrencyConversion-MVVM/CurrencyConversion-MVVM.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CurrencyConversion-VIPER/CurrencyConversion-VIPER.xcodeproj">
+   </FileRef>
+</Workspace>
