@@ -18,6 +18,8 @@ class ViewController: UIViewController, ViewControllerProtocol {
     @IBOutlet weak var result: UILabel!
     
     var presenter: Presenter!   // IN MVP, VIEW OWNS AND SENDS ACTIONS TO PRESENTER
+    
+                                // VIEW DOES NOT KNOW ABOUT BUSINESS MODEL / SERVICES
 
     override func viewDidLoad() {
         presenter = Presenter(view: self)
