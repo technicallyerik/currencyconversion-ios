@@ -16,6 +16,7 @@ class ViewController: UIViewController, ViewControllerProtocol {
 
     @IBOutlet weak var amountToConvert: UITextField!
     @IBOutlet weak var result: UILabel!
+    
     var presenter: Presenter!   // IN MVP, VIEW OWNS AND SENDS ACTIONS TO PRESENTER
 
     override func viewDidLoad() {

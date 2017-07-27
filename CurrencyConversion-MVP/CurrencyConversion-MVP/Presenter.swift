@@ -8,20 +8,24 @@
 
 // SHOULD NEVER IMPORT UIKIT
 import Foundation
+import CurrencyConversion_Common
 
 public class Presenter {
     
     unowned let view: ViewControllerProtocol
+    let conversionService: ConversionService
     let model: ConversionModel!  // IN MVP, PRESENTER OWNS AND UPDATES MODEL
     
-    public init(view: ViewControllerProtocol) {
+    public init(view: ViewControllerProtocol,
+                conversionService: ConversionService = ConversionService.sharedInstance) {
         self.view = view
+        self.conversionService = conversionService
         model = ConversionModel()
     }
     
     public func performConversion(sourceValue: Double) {
         model.sourceAmount = sourceValue
-        ConversionService.sharedInstance.convert(model: model)
+        conversionService.convert(model: model)
         view.displayResult(resultingValue: model.destinationAmount)
     }
     
